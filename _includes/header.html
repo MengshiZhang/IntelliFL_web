@@ -1,0 +1,14 @@
+<header>
+
+    {% if page.id != 'home' and page.id != 'docs' %}
+    <div class="container">
+    {% endif %}
+
+    <div class="logo"><a href="/"></a></div>
+    {% include primary-nav.html %}
+
+    {% if page.id != 'home' and page.id != 'docs' %}
+    </div>
+    {% endif %}
+    
+</header>
